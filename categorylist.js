@@ -2,37 +2,68 @@ const categoriesData = [
     {
         "id": "grocery",
         "name": "Grocery",
+        "image": "grocery.png",
+        "subcategories": [],        
+        // "subcategories": [
+        //     {
+        //         "id": "fruits-vegetables",
+        //         "name": "Fruits & Vegetables",
+        //         "subcategories": ["Fresh Fruits", "Fresh Vegetables"]
+        //     },
+        //     {
+        //         "id": "dairy-eggs",
+        //         "name": "Dairy & Eggs",
+        //         "subcategories": ["Milk", "Cheese", "Eggs"]
+        //     },
+        //     {
+        //         "id": "bakery",
+        //         "name": "Bakery",
+        //         "subcategories": ["Bread", "Pastries", "Cakes"]
+        //     },
+        //     {
+        //         "id": "canned-packaged",
+        //         "name": "Canned & Packaged",
+        //         "subcategories": ["Canned Food", "Pasta", "Rice", "Snacks"]
+        //     },
+        //     {
+        //         "id": "desserts",
+        //         "name": "Desserts",
+        //         "subcategories": null
+        //     }
+        // ]
+    },
+    {
+        "id": "mobiles",
+        "name": "Mobiles",
+        "image": "mobile.png",
+        "subcategories": []
+    },
+    {
+        "id": "fashion",
+        "name": "fashion",
+        "image":"fashion.png",
         "subcategories": [
             {
-                "id": "fruits-vegetables",
-                "name": "Fruits & Vegetables",
-                "subcategories": ["Fresh Fruits", "Fresh Vegetables"]
+                "id": "mens-fashion",
+                "name": "Men's fashion",
+                "subcategories": ["Shirts", "Pants", "Jackets"]
             },
             {
-                "id": "dairy-eggs",
-                "name": "Dairy & Eggs",
-                "subcategories": ["Milk", "Cheese", "Eggs"]
+                "id": "womens-fashion",
+                "name": "Women's fashion",
+                "subcategories": ["Dresses", "Skirts", "Tops"]
             },
             {
-                "id": "bakery",
-                "name": "Bakery",
-                "subcategories": ["Bread", "Pastries", "Cakes"]
-            },
-            {
-                "id": "canned-packaged",
-                "name": "Canned & Packaged",
-                "subcategories": ["Canned Food", "Pasta", "Rice", "Snacks"]
-            },
-            {
-                "id": "desserts",
-                "name": "Desserts",
-                "subcategories": null
+                "id": "kids-fashion",
+                "name": "Kids' fashion",
+                "subcategories": ["T-shirts", "Jeans", "Dresses"]
             }
         ]
     },
     {
         "id": "electronics",
         "name": "Electronics",
+        "image": "electronics.png",
         "subcategories": [
             {
                 "id": "mobile-phones",
@@ -52,29 +83,9 @@ const categoriesData = [
         ]
     },
     {
-        "id": "clothing",
-        "name": "Clothing",
-        "subcategories": [
-            {
-                "id": "mens-clothing",
-                "name": "Men's Clothing",
-                "subcategories": ["Shirts", "Pants", "Jackets"]
-            },
-            {
-                "id": "womens-clothing",
-                "name": "Women's Clothing",
-                "subcategories": ["Dresses", "Skirts", "Tops"]
-            },
-            {
-                "id": "kids-clothing",
-                "name": "Kids' Clothing",
-                "subcategories": ["T-shirts", "Jeans", "Dresses"]
-            }
-        ]
-    },
-    {
         "id": "home-furniture",
         "name": "Home & Furniture",
+        "image":"home&furniture.png",
         "subcategories": [
             {
                 "id": "Kitchen-appliances",
@@ -100,8 +111,37 @@ const categoriesData = [
         ]
     },
     {
+        "id": "appliances",
+        "name": "Appliances",
+        "image":"appliances.png",
+        "subcategories": []
+    },
+    {
+        "id": "travel",
+        "name": "Travel",
+        "image":"travel.png",
+        "subcategories": []
+        //     {
+        //         "id": "luggage",
+        //         "name": "Luggage",
+        //         "subcategories": ["Suitcases", "Backpacks", "Duffel Bags"]
+        //     },
+        //     {
+        //         "id": "travel-accessories",
+        //         "name": "Accessories",
+        //         "subcategories": ["Travel Pillows", "Travel Adapters", "Luggage Tags"]
+        //     },
+        //     {
+        //         "id": "travel-essentials",
+        //         "name": "Travel Essentials",
+        //         "subcategories": ["Passport Holders", "Toiletry Bags", "Travel Bottles"]
+        //     }
+        // ]
+    },
+    {
         "id": "beauty",
-        "name": "Beauty",
+        "name": "Beauty, Toys&more",
+        "image":"beauty&toys.png",
         "subcategories": [
             {
                 "id": "face",
@@ -120,30 +160,11 @@ const categoriesData = [
             }
         ]
     },
+  
     {
-        "id": "travel",
-        "name": "Travel",
-        "subcategories": [
-            {
-                "id": "luggage",
-                "name": "Luggage",
-                "subcategories": ["Suitcases", "Backpacks", "Duffel Bags"]
-            },
-            {
-                "id": "travel-accessories",
-                "name": "Accessories",
-                "subcategories": ["Travel Pillows", "Travel Adapters", "Luggage Tags"]
-            },
-            {
-                "id": "travel-essentials",
-                "name": "Travel Essentials",
-                "subcategories": ["Passport Holders", "Toiletry Bags", "Travel Bottles"]
-            }
-        ]
-    },
-    {
-        "id": "sports-stationary",
-        "name": "Sports & Stationary",
+        "id": "two-wheelers",
+        "name": "Two Wheelers",
+        "image":"two-wheeler.png",
         "subcategories": [
             {
                 "id": "fitness-equipment",
@@ -151,8 +172,8 @@ const categoriesData = [
                 "subcategories": ["Dumbbells", "Resistance Bands", "Yoga Mats"]
             },
             {
-                "id": "sports-clothing",
-                "name": "Clothing",
+                "id": "sports-fashion",
+                "name": "fashion",
                 "subcategories": ["Athletic Wear", "Running Shoes", "Sports Bras"]
             },
             {
@@ -180,8 +201,17 @@ $(document).ready(function () {
     const categoriesList = $("#categories");
 
     function createCategoryItem(categoryData) {
-        const categoryItem = $("<li>").text(categoryData.name);
+        
+        let categoryItem;
 
+        if(categoryData?.subcategories?.length === 0){
+            categoryItem = $("<li>").append(`<p class="category">${categoryData.name} <p>`);
+        }else{
+            categoryItem = $("<li>").append(`<p class="category">${categoryData.name} <svg class="category-down-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg> <p>`);
+
+        }
+
+        categoryItem.append(`<img class='catecoryImg' src='images/categories/${categoryData.image}' alt='img' />`);
         const subcategoriesList = $("<ul>");
 
         if (!categoryData.subcategories) {
