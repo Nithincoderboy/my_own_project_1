@@ -25,12 +25,13 @@ footer {
 /* Style for the link */
 
 .nav-item:hover {
-  /* background-color: rgb(182, 181, 181); */
-  /* text-decoration: none; */
-  /* opacity: 0.85; */
-  /* transition: all 0.2s ease-in; */
-  /* transform:scale(1.1); */
-  /* z-index: 1; */
+
+  background-color: rgb(182, 181, 181);
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+  transform:scale(1.1);
+  z-index: 1;
 }
 
 /* Style for the link */

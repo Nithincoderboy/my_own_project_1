@@ -44,7 +44,7 @@
     .nav-item:hover {
       background-color: rgb(182, 181, 181);
       text-decoration: none;
-      opacity: 0.85;
+      opacity: 1;
       transition: all 0.2s ease-in;
       transform:scale(1.1);
       z-index: 1;
@@ -77,6 +77,14 @@
 
     .nav-link:hover::after{
     opacity:1;
+    }
+    
+    @media(max-width:1300px)
+    {.nav-item:hover
+      {
+        transform: scale(1.05);
+      }
+
     }
   </style>
 
