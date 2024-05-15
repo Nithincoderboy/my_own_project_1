@@ -309,6 +309,30 @@ footer {
     padding: 4px;
     margin: 8px;
   }
+  @media (min-width:320px) and (max-width:1281px){
+    #box{
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y:auto ;
+        height: 500px;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+  }
+ 
+  @media (min-width:320px) and (max-width:1281px){
+    #img-box{
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+  }
+  
+ 
   #box {
     display: flex;
     gap: 55px;
@@ -344,6 +368,9 @@ footer {
     margin: 15px;
     gap: 49px;
     
+}
+.img{
+    margin-bottom: 2%;
 }
 
 
